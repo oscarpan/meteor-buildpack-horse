@@ -178,7 +178,7 @@ if [ -n "$METEOR_CLIENT_APP_DIR" ]; then
   CLIENT_APP_SOURCE_DIR="${APP_CHECKOUT_DIR}/${METEOR_CLIENT_APP_DIR}"
   cd "$CLIENT_APP_SOURCE_DIR"
   $METEOR_NPM install -g meteor-client-bundler
-  meteor-client bundle -s "$APP_SOURCE_DIR"
+  meteor-client bundle -s "$CLIENT_APP_SOURCE_DIR"
   cd "$APP_SOURCE_DIR"
 fi
 
