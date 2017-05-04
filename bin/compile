@@ -181,7 +181,7 @@ if [ -n "$METEOR_CLIENT_APP_DIR" ]; then
   cd "$CLIENT_APP_SOURCE_DIR"
   $METEOR_NPM install
   $METEOR_NPM install -g meteor-client-bundler
-  $METEOR_NPM run meteor-client:bundle
+  $METEOR_NPM run meteor:bundle
   cd "$APP_SOURCE_DIR"
 fi
 
