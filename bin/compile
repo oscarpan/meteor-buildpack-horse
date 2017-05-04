@@ -53,6 +53,7 @@ APP_SOURCE_DIR="${APP_CHECKOUT_DIR}"
 if [ -n "$METEOR_APP_DIR" ]; then
   APP_SOURCE_DIR="${APP_SOURCE_DIR}/${METEOR_APP_DIR}"
 fi
+export METEOR_WAREHOUSE_DIR = "$APP_SOURCE_DIR/.meteor"
 
 # Try "$APP_SOURCE_DIR/app/" if meteor app isn't there (the "Iron scaffolding
 # tool" default).
